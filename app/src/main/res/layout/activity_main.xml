@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+  android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_interstitial_load"
+        android:layout_width="151dp"
+        android:layout_height="63dp"
+        android:text="Load Interstitial"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="124dp" />
+
+    <Button
+        android:id="@+id/btn_interstitial_show"
+        android:layout_width="156dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:text="Show Interstitial"
+      />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="156dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:text="Exit"
+        />
+
+
+    <Button
+        android:id="@+id/btn_rewarded_load"
+        android:layout_width="151dp"
+        android:layout_height="63dp"
+        android:text="Load rewarded"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="124dp" />
+
+    <Button
+        android:id="@+id/btn_rewarded_show"
+        android:layout_width="156dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:text="Show rewarded"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+  ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+      android:layout_gravity="bottom">
+        <FrameLayout
+            android:id="@+id/ad_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</LinearLayout>

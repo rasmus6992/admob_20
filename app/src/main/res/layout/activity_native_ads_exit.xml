@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/design_default_color_primary">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn_back"
+            android:text="Exit"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exit_view"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerInParent="false"
+        android:gravity="center">
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_navads"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="Showing Ads..."/>
+
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/exit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:text="Do you want to exit?"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:background="@color/design_default_color_background"
+                android:padding="15dp"
+                android:text="Yes"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25sp"
+                android:layout_toStartOf="@id/yes"
+                android:layout_toLeftOf="@id/yes"
+                android:background="@color/design_default_color_primary"
+                android:padding="15sp"
+                android:text="No"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
